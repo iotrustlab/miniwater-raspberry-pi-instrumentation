@@ -10,6 +10,14 @@ The work sits at the intersection of **cyber-physical security, LLVM instrumenta
 
 **[Paper](https://doi.org/10.1109/DSN64029.2025.00031) · [MiniWater testbed configuration](https://github.com/iotrustlab/miniwatertreatment/tree/main) · [Full ICSTracker framework](https://github.com/icstracker/icstracker) · [Archived research artifact](https://doi.org/10.5281/zenodo.15109706)**
 
+## See the impact in 30 seconds
+
+[![30-second animation: a false PLC input stops a drainage pump, water overflows, and controller traces support root cause analysis](docs/media/miniwater-impact.gif)](docs/media/miniwater-impact.mp4)
+
+**[Watch or download the MP4](https://github.com/iotrustlab/miniwater-raspberry-pi-instrumentation/raw/refs/heads/main/docs/media/miniwater-impact.mp4)** · [Static preview](docs/media/miniwater-impact-poster.jpg) · [Transcript and animation source](docs/media/README.md)
+
+An illustrated MiniWater overflow scenario shows how a software decision becomes a physical consequence, and how this repository's execution evidence supports investigation with the full ICSTracker framework. The silent animation includes on-screen captions; its process states and trace rows are illustrative.
+
 ## Why controller visibility matters
 
 A tank overflow is an observable symptom. The investigation needs to explain which input, state transition, or control decision stopped the drainage pump, and how that decision relates to the intrusion. Network traffic and operating-system logs alone leave gaps inside PLC logic.

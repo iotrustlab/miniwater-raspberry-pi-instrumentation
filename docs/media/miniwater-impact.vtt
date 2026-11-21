@@ -1,0 +1,26 @@
+WEBVTT
+
+00:00.000 --> 00:05.000
+A controller decision moves real water.
+MiniWater illustrates the physical effect of PLC commands.
+
+00:05.000 --> 00:10.000
+One false input changes the command.
+The drainage pump stops too early.
+
+00:10.000 --> 00:15.000
+Inflow continues, water rises, and the tank overflows.
+The failure disrupts the physical process.
+
+00:15.000 --> 00:20.000
+This repository instruments OpenPLC to capture calls,
+arguments, and values. The trace rows are illustrative.
+
+00:20.000 --> 00:25.000
+The full ICSTracker framework backtracks from overflow
+to the pump command, control decision, and false input.
+
+00:25.000 --> 00:30.000
+MiniWater: PLC/ICS root cause analysis.
+Evidence for targeted investigation and recovery.
+ICSTracker, IEEE/IFIP DSN 2025.
