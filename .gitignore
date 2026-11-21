@@ -1,0 +1,39 @@
+# where docs are output to on gitlab.. MUST be named public/
+public/
+
+.sass-cache/
+.idea/
+
+*.pyc
+webserver/core/hardware_layer.cpp
+webserver/core/glueVars.cpp
+
+# IDE files for Visual Studio Code and Visual Studio
+CMakeSettings.json
+*.vscode/
+*.vs/
+
+# Build directories
+webserver/bin
+webserver/build
+obj/
+utils/dnp3_src/CMakeFiles/
+webserver/scripts/ethercat
+
+# Runtime directories
+.venv
+
+# Research reference: keep the supplied ICSTracker paper local.
+/ICSTracker*.pdf
+
+# Local installation state and generated compiler outputs.
+/install_log.txt
+/installed.db
+/compatibity_issues
+/swapfile
+__pycache__/
+*.o
+*.lo
+*.a
+/utils/dnp3_src/*.ii
+/utils/dnp3_src/*.s

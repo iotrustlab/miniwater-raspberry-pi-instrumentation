@@ -1,0 +1,24 @@
+name: Build tooling checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-tooling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check shell syntax
+        run: |
+          for script in install.sh background_installer.sh start_openplc.sh webserver/scripts/compile_program.sh; do
+            bash -n "$script" || exit 1
+          done
+      - name: Run isolated build and environment tests
+        run: python3 -m unittest discover -s tests -v
